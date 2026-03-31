@@ -2,17 +2,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in); // Perbaikan typo 'Scanner'
+        Scanner input = new Scanner(System.in); 
 
         System.out.print("Masukkan nama: ");
         String nama = input.nextLine();
 
         System.out.print("Masukkan no telp: ");
-        String noTelp = input.next(); // Lebih aman pakai String
+        String noTelp = input.next(); 
 
         Pelanggan pelanggan1 = new Pelanggan(nama, noTelp);
 
-        int pilihan = 0; // Inisialisasi variabel pilihan
+        int pilihan = 0; 
         do {
             System.out.println("\nMenu:");
             System.out.println("1. Isi Saldo");
